@@ -101,6 +101,7 @@ ul
     height: 250px;
     background-image: url(img/pp.png);
     background-size: cover;
+    flex-shrink: 0;
 }
 
 .tech-stack
@@ -131,7 +132,7 @@ ul
 
 .about-content
 {
-    width: 390px;
+    width: 374px;
 }
 
 h4
@@ -145,9 +146,10 @@ h4
 
 .about-picture
 {
-    width: 390px;
+    width: 374px;
     height: 258px;
     background-image: url(img/about.jpg);
     background-size: cover;
     border-radius: 20px;
+    flex-shrink: 0;
 }
