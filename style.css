@@ -1,0 +1,115 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--white);
+    font-family: 'Poppins', sans-serif;
+}
+
+:root
+{
+    --black: #000000;
+    --white: #ffffff;
+    --green: #50D890;
+    --gray: #808080;
+}
+
+p
+{
+    color: var(--gray);
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 100px;
+    margin-bottom: 150px;
+}
+
+.logo a
+{
+    text-decoration: none;
+    color: var(--black);
+    font-family: 'Nunito', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+ul li
+{
+    list-style-type: none;
+}
+
+ul li a
+{
+    text-decoration: none;
+    color: var(--black);
+    font-family: 'Nunito', sans-serif;
+}
+
+ul li a:hover
+{
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ul
+{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.hero-section
+{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 150px;
+}
+
+.intro
+{
+    width: 350px;
+}
+
+.intro h2
+{
+    color: var(--black);
+    font-size: 26px;
+}
+
+.social-icons a
+{
+    color: var(--black);
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.profile-picture
+{
+    width: 200px;
+    height: 200px;
+    background-image: url(img/pp.png);
+    background-size: cover;
+}
+
+.tech-stack
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stack-icons img
+{
+    width: 38px;
+    height: auto;
+    margin: 50px;
+    margin-top: 20px;
+}
