@@ -147,6 +147,16 @@ ul
     gap: 5rem;
 }
 
+.about-picture
+{
+    width: 374px;
+    height: 258px;
+    background-image: url(img/about.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
 .about-content
 {
     width: 374px;
@@ -161,12 +171,28 @@ h4
     font-size: 14px;
 }
 
-.about-picture
+/* Adjust the layout for smaller screens */
+@media screen and (max-width: 768px)
 {
-    width: 374px;
-    height: 258px;
-    background-image: url(img/about.jpg);
-    background-size: cover;
-    border-radius: 20px;
-    flex-shrink: 0;
+    .hero
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-picture
+    {
+        width: 125px;
+        height: 125px;
+    }
+
+    .about
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
 }
