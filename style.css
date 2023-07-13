@@ -334,10 +334,13 @@ footer
     position: fixed;
     bottom: 20px;
     left: 20px;
-    background-color: transparent;
+    background-color: var(--black);
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
     border: none;
     color: var(--black);
-    font-size: 36px;
+    font-size: 24px;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
@@ -350,12 +353,12 @@ footer
 #theme-icon
 {
     transition: color 0.3s ease-in-out;
-    color: black;
+    color: white;
 }
   
 .dark-mode #theme-icon
 {
-    color: white;
+    color: black;
 }
   
 body.dark-mode
