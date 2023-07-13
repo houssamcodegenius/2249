@@ -11,20 +11,32 @@
     </head>
     <body>
         <header>
-            <nav>
+            <nav class="navbar">
                 <div class="logo">
                     <a href="index.html">john.dev</a>
                 </div>
-                <div class="nav-links">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
             </nav>
         </header>
+
         <main>
             <section class="hero-section">
                 <div class="hero-container">
@@ -125,8 +137,11 @@
             </section>
             
         </main>
+
         <footer>
             <p>&copy; 2023 John Doe. All rights reserved.</p>
         </footer>
+
+        <script src="mains.js"></script>
     </body>
 </html>

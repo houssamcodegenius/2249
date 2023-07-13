@@ -19,14 +19,20 @@ p
     color: var(--gray);
 }
 
-nav
+.navbar
 {
+    background-color: var(--white);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 50px;
-    padding-right: 100px;
-    margin-bottom: 150px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+main
+{
+    margin-top: 150px;
 }
 
 .logo a
@@ -36,32 +42,52 @@ nav
     font-family: 'Nunito', sans-serif;
     font-size: 28px;
     font-weight: bold;
+    padding-left: 100px;
 }
 
-.nav-links ul
+.nav-menu
 {
     display: flex;
     gap: 1.5rem;
+    padding-right: 100px;
 }
 
-.nav-links ul li
+.nav-item
 {
     list-style-type: none;
 }
 
-.nav-links li a
+.nav-item a
 {
     text-decoration: none;
     color: var(--black);
     font-family: 'Nunito', sans-serif;
 }
 
-.nav-links li a:hover
+.nav-item a:hover
 {
     background: linear-gradient(90deg, #00dbde, #fc00ff);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.hamburger
+{
+    display: none;
+    cursor: pointer;
+    padding-right: 100px;
+}
+
+.bar
+{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--black);
 }
 
 .hero-section
@@ -296,6 +322,49 @@ footer
 /* Adjust the layout for smaller screens */
 @media screen and (max-width: 768px)
 {
+    .hamburger
+    {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2)
+    {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1)
+    {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3)
+    {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu
+    {
+        position: fixed;
+        left: -100%;
+        top: 20px;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--white);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item
+    {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active
+    {
+        left: 0;
+    }
+
     .hero-container
     {
         display: flex;
