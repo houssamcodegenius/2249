@@ -456,4 +456,10 @@ body.dark-mode
         display: flex;
         flex-direction: column;
     }
+
+    .theme-switch-btn
+    {
+        bottom: 10px;
+        left: 10px;
+    }
 }
