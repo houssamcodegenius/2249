@@ -49,6 +49,7 @@ main
 {
     display: flex;
     gap: 1.5rem;
+    margin-right: 100px;
 }
 
 .nav-item
@@ -195,6 +196,11 @@ main
     font-weight: bold;
 }
 
+h3
+{
+    color: var(--black);
+}
+
 h4
 {
     background: linear-gradient(90deg, #00dbde, #fc00ff);
@@ -287,6 +293,11 @@ h4
     flex-direction: column;
 }
 
+.contact-form label
+{
+    color: var(--black);
+}
+
 .contact-form input,
 .contact-form textarea
 {
@@ -316,6 +327,42 @@ footer
     display: flex;
     justify-content: center;
     width: 100%;
+}
+
+.theme-switch-btn
+{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: transparent;
+    border: none;
+    color: var(--black);
+    font-size: 36px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+  
+.theme-switch-btn:hover
+{
+    transform: scale(1.2);
+}
+  
+#theme-icon
+{
+    transition: color 0.3s ease-in-out;
+    color: black;
+}
+  
+.dark-mode #theme-icon
+{
+    color: white;
+}
+  
+body.dark-mode
+{
+    --black: #ffffff;
+    --white: #000000;
+    --gray: #808080;
 }
 
 /* Adjust the layout for smaller screens */

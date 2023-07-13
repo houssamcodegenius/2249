@@ -127,9 +127,12 @@
                     </div>
                     <div class="contact-form">
                         <form>
-                            Name<input type="text" name="name" placeholder="Enter your name" required>
-                            Email<input type="email" name="email" placeholder="Enter your email" required>
-                            Message<textarea name="message" placeholder="Enter your message" required></textarea>
+                            <label for="name">Name</label>
+                            <input type="text" name="name" placeholder="Enter your name" required>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" placeholder="Enter your email" required>
+                            <label for="message">Message</label>
+                            <textarea name="message" placeholder="Enter your message" required></textarea>
                             <button type="submit">Send</button>
                         </form>
                     </div>
@@ -142,6 +145,11 @@
             <p>&copy; 2023 John Doe. All rights reserved.</p>
         </footer>
 
+        <button id="theme-switch-btn" class="theme-switch-btn">
+            <i id="theme-icon" class="fas fa-moon"></i>
+          </button>          
+
         <script src="mains.js"></script>
+
     </body>
 </html>
