@@ -53,7 +53,7 @@ h4
 p
 {
     color: var(--gray);
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .navbar
@@ -163,6 +163,7 @@ main
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    gap: 3rem;
 }
 
 .intro
