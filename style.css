@@ -1,15 +1,7 @@
-html
-{
-    scroll-behavior: smooth;
-}
-
-body
+*
 {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: var(--white);
-    font-family: 'Poppins', sans-serif;
 }
 
 :root
@@ -17,6 +9,39 @@ body
     --black: #000000;
     --white: #ffffff;
     --gray: #808080;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    box-sizing: border-box;
+    background-color: var(--white);
+    font-family: 'Poppins', sans-serif;
+}
+
+body.dark-mode
+{
+    --black: #ffffff;
+    --white: #000000;
+    --gray: #808080;
+}
+
+h3
+{
+    color: var(--black);
+}
+
+h4
+{
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 14px;
 }
 
 p
@@ -33,11 +58,6 @@ p
     width: 100%;
     position: fixed;
     top: 0;
-}
-
-main
-{
-    margin-top: 150px;
 }
 
 .logo a
@@ -77,6 +97,31 @@ main
     -webkit-text-fill-color: transparent;
 }
 
+.theme-switch-btn
+{
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+  
+.theme-switch-btn:hover
+{
+    transform: scale(1.2);
+}
+  
+#theme-icon
+{
+    transition: color 0.3s ease-in-out;
+    color: black;
+}
+  
+.dark-mode #theme-icon
+{
+    color: white;
+}
+
 .hamburger
 {
     display: none;
@@ -93,6 +138,11 @@ main
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: var(--black);
+}
+
+main
+{
+    margin-top: 150px;
 }
 
 .hero-section
@@ -124,6 +174,11 @@ main
     color: var(--black);
     font-size: 24px;
     margin-right: 10px;
+}
+
+.social-icons a:hover
+{
+    color: var(--gray);
 }
 
 .profile-picture
@@ -192,27 +247,18 @@ main
     width: 374px;
 }
 
-.about-content a
+.about-content a:hover
+{
+    color: var(--gray);
+}
+
+.contact-button
 {
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
     color: var(--black);
     font-size: 18px;
     font-weight: bold;
-}
-
-h3
-{
-    color: var(--black);
-}
-
-h4
-{
-    background: linear-gradient(90deg, #00dbde, #fc00ff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 14px;
 }
 
 .projects-section
@@ -261,6 +307,11 @@ h4
     font-size: 18px;
     font-weight: bold;
     margin-right: 20px;
+}
+
+.project-content a:hover
+{
+    color: var(--gray);
 }
 
 .contact-section
@@ -327,43 +378,16 @@ h4
     cursor: pointer;
 }
 
+.contact-form button:hover
+{
+    background-color: var(--gray);
+}
+
 footer
 {
     display: flex;
     justify-content: center;
     width: 100%;
-}
-
-.theme-switch-btn
-{
-    background-color: transparent;
-    border: none;
-    font-size: 28px;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-}
-  
-.theme-switch-btn:hover
-{
-    transform: scale(1.2);
-}
-  
-#theme-icon
-{
-    transition: color 0.3s ease-in-out;
-    color: black;
-}
-  
-.dark-mode #theme-icon
-{
-    color: white;
-}
-  
-body.dark-mode
-{
-    --black: #ffffff;
-    --white: #000000;
-    --gray: #808080;
 }
 
 /* Adjust the layout for smaller screens */
@@ -398,8 +422,8 @@ body.dark-mode
     .nav-menu
     {
         position: fixed;
-        left: -200%;
-        top: 20px;
+        left: -100%;
+        top: 38px;
         gap: 0;
         flex-direction: column;
         background-color: var(--white);
