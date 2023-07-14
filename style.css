@@ -135,6 +135,7 @@ p
     width: 25px;
     height: 3px;
     margin: 5px auto;
+    border-radius: 10px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: var(--black);
@@ -173,7 +174,7 @@ main
 {
     color: var(--black);
     font-size: 24px;
-    margin-right: 10px;
+    margin-right: 12px;
 }
 
 .social-icons a:hover
@@ -424,6 +425,7 @@ footer
         position: fixed;
         left: -100%;
         top: 38px;
+        bottom: 374px;
         gap: 0;
         flex-direction: column;
         background-color: var(--white);
