@@ -74,14 +74,14 @@ p
     font-family: 'Nunito', sans-serif;
     font-size: 28px;
     font-weight: bold;
-    margin-left: 100px;
+    margin-left: 20px;
 }
 
 .nav-menu
 {
     display: flex;
     gap: 1.5rem;
-    margin-right: 100px;
+    margin-right: 20px;
 }
 
 .nav-item
@@ -349,7 +349,6 @@ main
     border: 1px solid var(--gray);
     padding: 35px;
     border-radius: 10px;
-    box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .contact-form form
@@ -432,7 +431,8 @@ footer
     .nav-menu
     {
         position: fixed;
-        left: -100%;
+        margin-right: 0;
+        right: -100%;
         top: 38px;
         bottom: 374px;
         gap: 0;
@@ -450,7 +450,7 @@ footer
 
     .nav-menu.active
     {
-        left: 0;
+        right: 0;
     }
 
     h2
